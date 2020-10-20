@@ -29,7 +29,7 @@
 				<a href="" class="i"><i class="fa fa-instagram"></i></a>
 			</div>
 			<div class="col-3 ml-5" id="logo-betica">
-				<img src="images/logo-betica.png">
+				<img src="{{ asset('images/logo-betica.png') }}" class="img-fluid">
 			</div>
 			<div class="col-4 ml-3">
 				<div class="float-right mt-5">

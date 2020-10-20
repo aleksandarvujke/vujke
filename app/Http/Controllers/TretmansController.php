@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
 use App\Tretmans;
+use App\Gallery;
 
 
 class TretmansController extends Controller
@@ -12,6 +13,8 @@ class TretmansController extends Controller
 
 	public function index()
 	{
+        
+
 		$tretmans = Tretmans::all();
 
 		return view('tretmans.index', compact('tretmans'));	

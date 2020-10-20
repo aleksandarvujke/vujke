@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'RegisterController@home');
 
+Route::post('/likes', 'RegisterController@like');
+
 
 Route::post('/register', 'RegisterController@store');
 
@@ -34,3 +36,7 @@ Route::post('/t', 'TretmansController@store');
 Route::get('/t/create', 'TretmansController@create');
 
 Route::get('/tretmans', 'TretmansController@index');
+
+Route::get('/g/create', 'GalleryController@create');
+
+Route::post('/g', 'GalleryController@store');
